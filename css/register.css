@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: black;
+    background: linear-gradient(to right, #36373d 0%, #6d686d 100%);
+}
+
+.backAplication {
+    width: 500px;
+    height: 510px;
+    background-color: azure;
+    border-radius: 40px;
+}
+
+.btnLogin {
+    display: flex;
+    justify-content: center;
+}
+
+.formComponents {
+    margin-left: 40px;
+}
+
+#line {
+    width: 100%;
+    border-bottom: 1px solid #c5c0c0;
+    margin-top: 30px;
+  }
+
+a {
+    text-decoration: none;
+    color: azure;
+}

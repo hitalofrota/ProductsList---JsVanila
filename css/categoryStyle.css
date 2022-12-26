@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btnVoltar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.cabecalhoTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 380px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 200px;
+    margin: 20px;
+}
+
+.formEspacamento {
+    font-size: larger;
+    margin: 10px;
+    height: 100%;
+}
+
+.formBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#bntEdit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

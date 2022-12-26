@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cabecalhoTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.cabecalhoBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin: 20px;
+}
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.formEspacamento {
+    margin: 10px;
+    height: 100%;
+}
+
+.formBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important; 
+    align-items: center !important;
+}
+
+.btnPrimary {
+    width: 150px;
+    height: 60px;
+    font-size: large;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+#cadastrarBtn {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#cadastrarCatg {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.trSuporior {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.trInferior {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+    width: 1250px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#descriptionValue {
+    width: 190px;
+    margin-left: 50px;
+}
+
+#priceValue {
+    width: 170px;
+}
+
+#quantityValue {
+    width: 190px;
+}
+
+#checkValue {
+    width: 190px;
+    margin-left: 160px;
+}
+
+#bntEdit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
