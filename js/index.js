@@ -5,6 +5,7 @@ function productList() {
          variavel.map(async (element) => {
             await mountList(element);
             deleteElement(element.id); 
+            editar(element.id);
          })})}
 
 function deleteElement(id){
@@ -15,8 +16,8 @@ function deleteElement(id){
     )}
 }
 
-function editar() {
-    document.querySelector(`#edit-${element.id}`).onclick = function() {
+function editar(id) {
+    document.querySelector(`#edit-${id}`).onclick = function() {
         axios.put(`http://127.0.0.1:8000/api/products/${id}`, {
         name: document.querySelector('#nameValue').value = "teste",
         description: document.querySelector('#descriptionValue').value = "teste",
@@ -25,7 +26,7 @@ function editar() {
         category_id: document.querySelector('#categoryValue').value = 1,
         active: document.querySelector('#checkValue').checked = 1,
     }).then((response) => {
-        console.log(response);
+        console.log("Passou!!",response);
         }, (error) => {
             console.log(error);
     })}}
@@ -50,6 +51,26 @@ function mountList(element) {
     document.querySelector('#checkValue').innerHTML += `${element.active ? "Ativo" : "Inativo"}<br>`
     document.querySelector('#bntEdit').innerHTML += `<button id="edit-${element.id}" >Editar</button>`
     document.querySelector('#bntDelete').innerHTML += `<button id="delete-${element.id}" >Excluir</button><br>`
+}
+
+function openModal(mn) {
+    let modal = document.getElementById(mn);
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'Block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(mn) {
+    let modal = document.getElementById(mn);
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
 }
 
 document.onload = productList();
